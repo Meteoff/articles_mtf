@@ -42,7 +42,7 @@ Les codes peuvent être :
 * php
 * css
 * mysql
-*javascript
+* javascript
 
 **Astuce :Les codes utilisés sont disponible sur mon github : [LIEN](https://github.com/Meteoff/articles_mtf), vous pouvez utiliser mon code gratuitement, et le modifié à votre guise 😉**
 
