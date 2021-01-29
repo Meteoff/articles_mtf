@@ -47,3 +47,5 @@ Les codes peuvent être :
 **Astuce :Les codes utilisés sont disponible sur mon github : [LIEN](https://github.com/Meteoff/articles_mtf), vous pouvez utiliser mon code gratuitement, et le modifié à votre guise 😉**
 
 Le forum meteoff vous sert à poser des questions, si vous avez besoin de montrer du code, rendez vous sur [hastebin.com](https://hastebin.com)
+
+Merci d'avoir suivi ce 1er article ! Et bonne journée !
