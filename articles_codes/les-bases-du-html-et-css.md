@@ -1,6 +1,6 @@
 Les bases du HTML et CSS
 ===
-*HTML - Niveau 1 - Créer par meteoff - 29/01/21*
+*HTML - Niveau 1 - Créer par meteoff - 28/01/21*
 ----
 
 Bonjour et bienvenue dans le 1er **vrai** article de développement.
