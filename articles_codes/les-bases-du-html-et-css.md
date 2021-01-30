@@ -29,6 +29,7 @@ Les pages HTML doivent toujours comporter ces balises :
   </body>
 </html>
 ```
+<a href="salut">salut</a>
 *html*
 
 Vous avez remaqué que toutes les balises se ferment, sauf une : `<!DOCTYPE html>`
