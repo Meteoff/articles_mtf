@@ -48,8 +48,8 @@ Pour signifier qu'il faut aller dans un dossier, il suffit de mettre un `/` dans
 *html*
 
 Il existe plusieurs attributs pour la balise img, en voici quelques-un : (<img ...)
-|Balises|Explications|
-|-------|------------|
+|Arguments|Explications|
+|---------|------------|
 |`src="valeur"`|Définir le chemin à emprunter pour trouver l'image.|
 |`width="valeur"`|Définir la taille de l'image. En %,px,em,...|
 |`height="valeur"`|Définir la hauteur de l'image. En %,px,em,...|
@@ -103,5 +103,98 @@ Il doit toujours y avoir le protocole, `http://` ou `https://` pour visiter des 
 
 La balise **a** comporte aussi beaucoup d'attributs, en voici la plupart : (<a ...)
 
-|Balises|Explications|
-|-------|------------|
+|Arguments|Explications|
+|---------|------------|
+|`href="lien"`|Indique le chemin ou l'URL du fichier.|
+|`title="valeur"`|Affiche un titre lorsque la souris reste sur le lien.|
+|`target="valeur"`|Indique la cible du lien. Le plus souvent `_blank`, pour ouvrir dans un nouvel onglet.|
+|`class="valeur"`|Styliser le lien avec du CSS.|
+|`id="valeur"`|	Styliser le lien avec du CSS ou pour l'utiliser avec du Javascript.|
+|`draggable="valeur"`|	Indique si le lien peut être attrapé par l'utilisateur. TRUE FALSE|
+
+Vidéos
+--------
+
+Pour afficher des vidéos, il faut utiliser les balises `<video>...</video>`
+
+Mais les balises vidéos et audios sont plus complexes que les liens et images 😒.
+
+Pour ces balises, il faut signifier la source, le type, les contrôles, etc...
+Par exemple pour une vidéo en MP4 :
+
+```html
+<video controls fullscreen>
+  <source src="https://www.dropbox.com/s/fh4ylk14vdtc074/article-4.mp4?raw=1" type="video/mp4">
+  Désolé, votre navigateur ne prends pas en charge les vidéos :\
+</video>
+```
+
+**Avertissement :Cette vidéo provient d'un lien externe, mais peut provenir d'un fichier local.**
+
+**Attention :Les vidéos youtube ne sont pas compatibles avec l'élèment <video> mais fonctionne avec un iframe.**
+
+En gros, pour ajouter une vidéo il faut :
+
+* Ajouter les balises `<video></video>`
+* Ajouter la balise `<source>`
+* Signifier la source (comme les images) `<source src="votre source">`
+* Signifier le type de vidéo `type=video/mp4`
+* Afficher un message pour les navigateurs qui ne prennent pas en charge les vidéos
+* Et enfin, fermer les balises
+
+Pour la balise video, voici la plupart des arguments : (<video ...)
+
+|Arguments|Explications|
+|---------|------------|
+|`controls`|Indique si la vidéo doit contenir des contrôles (pause, pleine écran, son,...)|
+|`fullscreen`|Indique si la vidéo peut être lu en plein écran ou non.|
+|`autoplay`|Indique si la vidéo est lu automatiquement au chargement de la page.|
+|`loop`|Activer la lecture à infini|
+|`muted`|Mettre le volume de la vidéo à 0.|
+|`width="valeur"`|Définit la taille de la vidéo.|
+|`height="valeur"`|Définit la hauteur de la vidéo.|
+|`class="valeur"`|Styliser la vidéo en CSS.|
+|`id="valeur"`|	Styliser la vidéo en CSS ou l'utiliser en javascript.|
+
+La vidéo peut contenir plusieurs source, avec plusieurs type : (<source type=...)
+
+|Types|Explications|
+|-----|------------|
+|`video/mp4`|Pour les vidéos en MP4.|
+|`video/ogg`|Pour les vidéos en ogg.|
+|`video/webm`|Pour les vidéos en webm.|
+
+```html
+<video controls autoplay>
+  <source src="video/ma_video.mp4" type="video/mp4">
+  <source src="video/ma_video.ogg" type="video/ogg">
+  Désolé, votre navigateur ne prends pas en charge les vidéos :\
+</video>
+```
+*html*
+
+Musiques
+------
+
+Pour signifier qu'il faut ajouter une musique (ou un audio), il faut ajouter les balises `<audio>...</audio>`
+
+Les balises audios fonctionnent comme les balises videos, c'est à dire qu'il faut signifier la source.
+
+```html
+<audio controls>
+  <source src="https://www.dropbox.com/s/vdh97v8nrixiv6f/Hymn%20to%20the%20Sea.mp3?raw=1" type="audio/mpeg">
+  Désolé, votre navigateur ne prends pas en charge les audios :\
+</audio>
+```
+*html*
+
+La balise audio comporte exactement les mêmes arguments que la balise vidéo, il faut juste changer le type pour les sources, et voici la plupart des types : (<source type="...)
+
+|Types|Explications|
+|-----|------------|
+|`audio/mpeg`|Fichier au format mp3|
+|`audio/ogg`|Fichier au format ogg|
+|`audio/wav`|	Fichier au format wav|
+
+Merci d'avoir lu cet article ! Répondez au quiz pour gagner du niveau et bonne journée !
+-Meteoff
